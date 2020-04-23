@@ -48,7 +48,7 @@ def pre_request_logging():
         "original_url": request.url,
         "path": request.path,
         "data": values,
-        "headers": dict(request.headers.to_list())})
+        "headers": dict(request.headers)})
 
 
 @registry_app.route("/test_error")
